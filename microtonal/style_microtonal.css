@@ -1,0 +1,57 @@
+@import "/style.css";
+
+#piano {
+  width: 80vw;
+  background: #3b3b3b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* VOLUME KNOB */
+:root {
+  --volumeKnobRotation: 0.5;
+}
+
+.knob {
+  width: 10vw;
+  height: 10vw;
+}
+
+#volumeKnobVisual {
+  width: 10vw;
+  height: 10vw;
+  background: red;
+  border-top-left-radius: 5vw;
+  position: absolute;
+  transform: rotate(--volumeKnobRotation);
+}
+
+input[type="range"] {
+  transform: rotate(270deg);
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+}
+
+/* PIANO KEYS */
+#keys {
+  width: 70vw;
+  height: 50vh;
+  background: wheat;
+  display: flex;
+  flex-direction: row;
+}
+
+.key {
+  width: 100vw;
+  border-top: 2px solid #3b3b3b;
+  border-right: 2px solid #3b3b3b;
+  border-left: 2px solid #3b3b3b;
+}

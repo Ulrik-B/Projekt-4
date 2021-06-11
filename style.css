@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap");
+
+:root {
+  --background-color: #ffffeb;
+  --background-color-darker: #dfdfbb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 80vw;
+}
+
+header {
+  text-align: center;
+}
+
+h1 a {
+  color: #000000;
+  font-family: "staatliches";
+  font-size: 3em;
+  transition: 400ms;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #2ab7ca;
+  letter-spacing: 1vw;
+}
+
+/* Navigation Bar */
+nav {
+  border-bottom: 3px solid var(--background-color-darker);
+}
+
+nav ul {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+li {
+  width: 100vw;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  font-family: "staatliches";
+  font-size: 2em;
+  padding: 2vw;
+  transition: 400ms;
+}
+
+li a:link,
+li a:visited,
+li:active {
+  color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    width: 80vw;
+  }
+}
+
+/* Article */
+h2 {
+  padding: 2vw;
+  font-family: "raleway";
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  padding: 2vw;
+  font-family: "raleway";
+  font-size: 1.5em;
+}

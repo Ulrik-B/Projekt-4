@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/microtonal/style_microtonal.css" />
+    <script src="/microtonal/script_microtonal.js"></script>
+    <link rel="icon" href="/icon.svg" />
+    <title>POLYGROUND</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/index.html">POLYGROUND</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/microtonal/microtonal.html">Microtonal Piano</a></li>
+          <li>
+            <a href="/Polyrhythmic/polyrhythmic.html">Polyrhythmic Metronome</a>
+          </li>
+          <li><a href="/Frequency/frequency.html">Frequency Generator</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <h2>Polyrhythmic Piano</h2>
+      <div id="piano">
+        <form id="controls">
+          <!--
+          <p>
+            <input type="number" id="baseFrequency" value="440" />
+            <label for="baseFrequency">Base Frequency</label>
+          </p>
+          <p>
+            <input type="number" id="exponent" value="2" />
+            <label for="exponent">Exponent</label>
+          </p>
+          <p>
+            <input type="number" id="notesPerOctave" value="12" />
+            <label for="notesPerOctave">Notes Per Octave</label>
+          </p>
+        -->
+          <div class="knob">
+            <div id="volumeKnobVisual"></div>
+            <input type="range" id="volumeKnob" min="0" max="1" step="0.01" />
+            <label for="volumeKnob">Volume</label>
+          </div>
+        </form>
+        <div id="keys">
+          <div class="key" id="key0" data-keynumber="0"></div>
+          <div class="key" id="key1" data-keynumber="1"></div>
+          <div class="key" id="key2" data-keynumber="2"></div>
+          <div class="key" id="key3" data-keynumber="3"></div>
+          <div class="key" id="key4" data-keynumber="4"></div>
+          <div class="key" id="key5" data-keynumber="5"></div>
+          <div class="key" id="key6" data-keynumber="6"></div>
+          <div class="key" id="key7" data-keynumber="7"></div>
+          <div class="key" id="key8" data-keynumber="8"></div>
+          <div class="key" id="key9" data-keynumber="9"></div>
+          <div class="key" id="key10" data-keynumber="10"></div>
+          <div class="key" id="key11" data-keynumber="11"></div>
+          <div class="key" id="key12" data-keynumber="12"></div>
+          <div class="key" id="key13" data-keynumber="13"></div>
+          <div class="key" id="key14" data-keynumber="14"></div>
+          <div class="key" id="key15" data-keynumber="15"></div>
+          <div class="key" id="key16" data-keynumber="16"></div>
+          <div class="key" id="key17" data-keynumber="17"></div>
+          <div class="key" id="key18" data-keynumber="18"></div>
+          <div class="key" id="key19" data-keynumber="19"></div>
+          <div class="key" id="key20" data-keynumber="20"></div>
+          <div class="key" id="key21" data-keynumber="21"></div>
+          <div class="key" id="key22" data-keynumber="22"></div>
+          <div class="key" id="key23" data-keynumber="23"></div>
+          <div class="key" id="key24" data-keynumber="24"></div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
